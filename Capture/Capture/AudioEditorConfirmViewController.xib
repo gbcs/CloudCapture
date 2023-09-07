@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudioEditorConfirmViewController">
+            <connections>
+                <outlet property="activityView" destination="kzv-Gk-kr5" id="six-9r-Dmk"/>
+                <outlet property="playButton" destination="7Tn-oO-yGT" id="G6I-Ad-Vf0"/>
+                <outlet property="processingLabel" destination="5uv-sT-ZUD" id="Wkp-25-Kzc"/>
+                <outlet property="progress" destination="QHb-Oc-Zfq" id="NDb-ET-dAJ"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="QHb-Oc-Zfq">
+                    <rect key="frame" x="20" y="174" width="528" height="3"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="progressTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </progressView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="kzv-Gk-kr5">
+                    <rect key="frame" x="266" y="64" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Processing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uv-sT-ZUD">
+                    <rect key="frame" x="241" y="118" width="86" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view opaque="NO" alpha="0.019999999552965164" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Tn-oO-yGT" customClass="GradientAttributedButton">
+                    <rect key="frame" x="352" y="221" width="196" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="QHb-Oc-Zfq" secondAttribute="centerX" id="1ts-bv-Ras"/>
+                <constraint firstItem="QHb-Oc-Zfq" firstAttribute="top" secondItem="5uv-sT-ZUD" secondAttribute="bottom" constant="35" id="Bbz-SF-Ppc"/>
+                <constraint firstItem="7Tn-oO-yGT" firstAttribute="top" secondItem="QHb-Oc-Zfq" secondAttribute="bottom" constant="45" id="GbE-ke-iAR"/>
+                <constraint firstAttribute="centerX" secondItem="kzv-Gk-kr5" secondAttribute="centerX" id="KZ4-Ts-YKV"/>
+                <constraint firstItem="QHb-Oc-Zfq" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="Nuh-e4-tmC"/>
+                <constraint firstAttribute="bottom" secondItem="7Tn-oO-yGT" secondAttribute="bottom" constant="55" id="Pca-DY-KcQ"/>
+                <constraint firstAttribute="centerX" secondItem="5uv-sT-ZUD" secondAttribute="centerX" id="Pf6-Pt-L1T"/>
+                <constraint firstAttribute="trailing" secondItem="QHb-Oc-Zfq" secondAttribute="trailing" constant="20" symbolic="YES" id="Vnf-Qf-afH"/>
+                <constraint firstItem="kzv-Gk-kr5" firstAttribute="top" secondItem="1" secondAttribute="top" constant="64" id="WCB-vn-jtx"/>
+                <constraint firstItem="7Tn-oO-yGT" firstAttribute="trailing" secondItem="QHb-Oc-Zfq" secondAttribute="trailing" id="Z5V-Ww-3U6"/>
+                <constraint firstItem="5uv-sT-ZUD" firstAttribute="top" secondItem="kzv-Gk-kr5" secondAttribute="bottom" constant="17" id="ZCl-8U-Dac"/>
+                <constraint firstAttribute="centerX" secondItem="5uv-sT-ZUD" secondAttribute="centerX" id="c7C-D9-dnq"/>
+                <constraint firstItem="7Tn-oO-yGT" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="352" id="d1h-ON-O2y"/>
+                <constraint firstAttribute="centerX" secondItem="QHb-Oc-Zfq" secondAttribute="centerX" id="dbH-0c-pv2"/>
+                <constraint firstItem="kzv-Gk-kr5" firstAttribute="centerX" secondItem="5uv-sT-ZUD" secondAttribute="centerX" id="ouK-w5-DqF"/>
+                <constraint firstAttribute="centerX" secondItem="QHb-Oc-Zfq" secondAttribute="centerX" id="pUa-Cx-QWm"/>
+                <constraint firstAttribute="centerX" secondItem="kzv-Gk-kr5" secondAttribute="centerX" id="qer-kF-d8V"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

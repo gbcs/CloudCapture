@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterClipConfirmViewController">
+            <connections>
+                <outlet property="activityView" destination="zVx-di-Nak" id="Z2x-CJ-6KK"/>
+                <outlet property="processingLabel" destination="MUR-Gk-4ud" id="Yzz-yt-YOa"/>
+                <outlet property="progress" destination="nIl-Cr-eiC" id="nQ5-du-eKQ"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="nIl-Cr-eiC">
+                    <rect key="frame" x="20" y="209" width="528" height="3"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="progressTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </progressView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="zVx-di-Nak">
+                    <rect key="frame" x="266" y="99" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="ppV-UQ-AnI"/>
+                        <constraint firstAttribute="width" constant="37" id="yBB-Og-7Qe"/>
+                    </constraints>
+                </activityIndicatorView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Processing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUR-Gk-4ud">
+                    <rect key="frame" x="241" y="153" width="86" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nIl-Cr-eiC" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="Fm6-cd-qJg"/>
+                <constraint firstAttribute="centerX" secondItem="MUR-Gk-4ud" secondAttribute="centerX" id="Ol5-Jb-bKS"/>
+                <constraint firstAttribute="centerX" secondItem="zVx-di-Nak" secondAttribute="centerX" id="TL9-GB-uVf"/>
+                <constraint firstAttribute="trailing" secondItem="nIl-Cr-eiC" secondAttribute="trailing" constant="20" symbolic="YES" id="bfl-dP-jUO"/>
+                <constraint firstItem="MUR-Gk-4ud" firstAttribute="top" secondItem="zVx-di-Nak" secondAttribute="bottom" constant="17" id="dUS-4M-HPp"/>
+                <constraint firstItem="nIl-Cr-eiC" firstAttribute="top" secondItem="MUR-Gk-4ud" secondAttribute="bottom" constant="35" id="mtm-YM-gJO"/>
+                <constraint firstItem="zVx-di-Nak" firstAttribute="top" secondItem="1" secondAttribute="top" constant="99" id="nf4-ik-I2H"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

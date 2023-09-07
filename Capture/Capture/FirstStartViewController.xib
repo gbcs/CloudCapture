@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstStartViewController">
+            <connections>
+                <outlet property="locButton" destination="pjp-iU-2DD" id="llj-5b-flc"/>
+                <outlet property="micButton" destination="Kda-xv-YjS" id="smK-zm-UhO"/>
+                <outlet property="photoButton" destination="RfT-6T-Cy9" id="p1c-wL-a16"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for downloading CloudCapt Camera and Edit Studio." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxJ-S7-bNH">
+                    <rect key="frame" x="20" y="63" width="440" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Microphone - Allow audio to be used in recordings." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="361" translatesAutoresizingMaskIntoConstraints="NO" id="TY6-ej-Da0">
+                    <rect key="frame" x="27" y="197" width="361" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera Roll / Photos Album - Take pictures, use pictures in filters, save video to camera roll." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="361" translatesAutoresizingMaskIntoConstraints="NO" id="afY-aL-wnu">
+                    <rect key="frame" x="27" y="118" width="361" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Services - Allow use of location metadata." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="361" translatesAutoresizingMaskIntoConstraints="NO" id="dKN-DG-2O3">
+                    <rect key="frame" x="27" y="251" width="361" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap 'Request' to grant permission for:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZE-fJ-jKm">
+                    <rect key="frame" x="-4" y="89" width="489" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfT-6T-Cy9">
+                    <rect key="frame" x="403" y="131" width="57" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="57" id="Uhq-em-YU3"/>
+                    </constraints>
+                    <state key="normal" title="Request">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userTappedPhotoRequest:" destination="-1" eventType="touchUpInside" id="RjD-zZ-u9V"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kda-xv-YjS">
+                    <rect key="frame" x="403" y="205" width="57" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Request">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userTappedMicRequest:" destination="-1" eventType="touchUpInside" id="rX6-x4-0Xa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjp-iU-2DD">
+                    <rect key="frame" x="403" y="261" width="57" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Request">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="userTappedLocationRequest:" destination="-1" eventType="touchUpInside" id="2GN-UZ-lLD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pjp-iU-2DD" firstAttribute="top" secondItem="Kda-xv-YjS" secondAttribute="bottom" constant="26" id="8dX-mI-O84"/>
+                <constraint firstItem="VZE-fJ-jKm" firstAttribute="trailing" secondItem="RfT-6T-Cy9" secondAttribute="trailing" constant="25" id="95N-3B-Sd2"/>
+                <constraint firstItem="dKN-DG-2O3" firstAttribute="trailing" secondItem="TY6-ej-Da0" secondAttribute="trailing" id="AIf-ca-Y8Q"/>
+                <constraint firstAttribute="trailing" secondItem="Kda-xv-YjS" secondAttribute="trailing" constant="20" id="BCW-2E-gF0"/>
+                <constraint firstItem="RfT-6T-Cy9" firstAttribute="top" secondItem="VZE-fJ-jKm" secondAttribute="bottom" constant="21" id="FGd-cv-rt6"/>
+                <constraint firstAttribute="trailing" secondItem="RfT-6T-Cy9" secondAttribute="trailing" constant="20" id="Ktk-dz-gBx"/>
+                <constraint firstItem="afY-aL-wnu" firstAttribute="trailing" secondItem="TY6-ej-Da0" secondAttribute="trailing" id="LYF-JG-uGJ"/>
+                <constraint firstAttribute="bottom" secondItem="pjp-iU-2DD" secondAttribute="bottom" constant="29" id="NTh-l2-icG"/>
+                <constraint firstItem="jxJ-S7-bNH" firstAttribute="leading" secondItem="VZE-fJ-jKm" secondAttribute="leading" constant="24" id="QCk-ii-2a9"/>
+                <constraint firstItem="jxJ-S7-bNH" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="QL8-Bh-lDG"/>
+                <constraint firstItem="Kda-xv-YjS" firstAttribute="top" secondItem="RfT-6T-Cy9" secondAttribute="bottom" constant="44" id="RAt-ds-5Sd"/>
+                <constraint firstItem="Kda-xv-YjS" firstAttribute="centerY" secondItem="TY6-ej-Da0" secondAttribute="centerY" id="UEp-Hl-Ckb"/>
+                <constraint firstAttribute="bottom" secondItem="dKN-DG-2O3" secondAttribute="bottom" constant="20" symbolic="YES" id="WcF-BK-WzW"/>
+                <constraint firstItem="afY-aL-wnu" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="27" id="b3f-7e-oMF"/>
+                <constraint firstItem="jxJ-S7-bNH" firstAttribute="trailing" secondItem="VZE-fJ-jKm" secondAttribute="trailing" constant="-25" id="eRh-S8-0HQ"/>
+                <constraint firstItem="RfT-6T-Cy9" firstAttribute="leading" secondItem="afY-aL-wnu" secondAttribute="trailing" constant="15" id="mot-6n-5O2"/>
+                <constraint firstItem="dKN-DG-2O3" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="27" id="toJ-Mp-cfa"/>
+                <constraint firstItem="afY-aL-wnu" firstAttribute="top" secondItem="VZE-fJ-jKm" secondAttribute="bottom" constant="8" symbolic="YES" id="tp7-h7-XVc"/>
+                <constraint firstItem="TY6-ej-Da0" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="27" id="uL3-Kh-BkZ"/>
+                <constraint firstItem="TY6-ej-Da0" firstAttribute="top" secondItem="afY-aL-wnu" secondAttribute="bottom" constant="9" id="vjH-u8-Mf9"/>
+                <constraint firstAttribute="trailing" secondItem="pjp-iU-2DD" secondAttribute="trailing" constant="20" id="xKd-be-oP1"/>
+                <constraint firstItem="VZE-fJ-jKm" firstAttribute="top" secondItem="jxJ-S7-bNH" secondAttribute="bottom" constant="8" id="xjT-WP-k8d"/>
+                <constraint firstItem="dKN-DG-2O3" firstAttribute="top" secondItem="TY6-ej-Da0" secondAttribute="bottom" constant="8" symbolic="YES" id="yYd-D5-8SX"/>
+                <constraint firstItem="afY-aL-wnu" firstAttribute="centerY" secondItem="RfT-6T-Cy9" secondAttribute="centerY" constant="7" id="zL6-Oh-F5p"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

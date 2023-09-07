@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LinkShareViewController">
+            <connections>
+                <outlet property="closeButton" destination="hCG-eN-h1e" id="DLi-8m-P4M"/>
+                <outlet property="shareButton" destination="K6n-6D-Neu" id="ZAb-Mg-9BT"/>
+                <outlet property="testButton" destination="l3y-Dg-zkT" id="Nog-mf-d6C"/>
+                <outlet property="urlLabel" destination="bA4-zD-JLw" id="Q2J-Ei-Mof"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="528" translatesAutoresizingMaskIntoConstraints="NO" id="bA4-zD-JLw">
+                    <rect key="frame" x="20" y="54" width="528" height="182"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="182" id="2bg-7K-LQ1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K6n-6D-Neu" customClass="GradientAttributedButton">
+                    <rect key="frame" x="242" y="244" width="94" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="BE5-lN-jvx"/>
+                        <constraint firstAttribute="height" constant="56" id="XsE-MW-MPf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCG-eN-h1e" customClass="GradientAttributedButton">
+                    <rect key="frame" x="390" y="244" width="94" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="69Z-Eq-38Y"/>
+                        <constraint firstAttribute="width" constant="94" id="IP9-uP-Hub"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3y-Dg-zkT" customClass="GradientAttributedButton">
+                    <rect key="frame" x="96" y="244" width="94" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="ORt-XQ-Gug"/>
+                        <constraint firstAttribute="width" constant="94" id="WCB-Ka-mwW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="K6n-6D-Neu" firstAttribute="leading" secondItem="l3y-Dg-zkT" secondAttribute="trailing" constant="52" id="8CD-Rk-gt6"/>
+                <constraint firstAttribute="trailing" secondItem="bA4-zD-JLw" secondAttribute="trailing" constant="20" id="8i2-a4-SR3"/>
+                <constraint firstAttribute="bottom" secondItem="K6n-6D-Neu" secondAttribute="bottom" constant="20" id="ErI-w5-8Qf"/>
+                <constraint firstAttribute="centerX" secondItem="K6n-6D-Neu" secondAttribute="centerX" constant="-5" id="RPx-Aj-RUD"/>
+                <constraint firstItem="hCG-eN-h1e" firstAttribute="bottom" secondItem="K6n-6D-Neu" secondAttribute="bottom" id="bSJ-a9-cSA"/>
+                <constraint firstItem="bA4-zD-JLw" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="cMK-7Z-1bV"/>
+                <constraint firstItem="K6n-6D-Neu" firstAttribute="top" secondItem="bA4-zD-JLw" secondAttribute="bottom" constant="8" id="igC-tI-nNz"/>
+                <constraint firstItem="hCG-eN-h1e" firstAttribute="bottom" secondItem="l3y-Dg-zkT" secondAttribute="bottom" id="w2A-f4-8id"/>
+                <constraint firstItem="hCG-eN-h1e" firstAttribute="leading" secondItem="K6n-6D-Neu" secondAttribute="trailing" constant="54" id="xzy-Io-JZD"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

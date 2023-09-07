@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GridCollectionViewController">
+            <connections>
+                <outlet property="actionButton" destination="daP-e4-Nsx" id="Yoe-93-8gQ"/>
+                <outlet property="collectionViewPack" destination="35" id="mdw-RA-ACd"/>
+                <outlet property="playButton" destination="oHJ-cE-IdC" id="BY8-29-Ln0"/>
+                <outlet property="toolBar" destination="iga-VF-kv0" id="FHx-lq-hi1"/>
+                <outlet property="trashButton" destination="TXU-Ok-Ygk" id="3qH-Pp-jxT"/>
+                <outlet property="trimButton" destination="NJC-Nz-TGB" id="vag-ME-mvU"/>
+                <outlet property="view" destination="34" id="41"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="34">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="35">
+                    <rect key="frame" x="0.0" y="0.0" width="478" height="276"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="3" id="36">
+                        <size key="itemSize" width="100" height="80"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="42"/>
+                        <outlet property="delegate" destination="-1" id="43"/>
+                    </connections>
+                </collectionView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="iga-VF-kv0">
+                    <rect key="frame" x="0.0" y="276" width="480" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <items>
+                        <barButtonItem systemItem="trash" id="TXU-Ok-Ygk">
+                            <connections>
+                                <action selector="userTappedTrash:" destination="-1" id="fhj-ZX-9U0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="Yi0-LY-s01"/>
+                        <barButtonItem systemItem="edit" id="NJC-Nz-TGB">
+                            <connections>
+                                <action selector="userTappedTrim:" destination="-1" id="v4G-LV-tyr"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="4Yh-ay-u0g"/>
+                        <barButtonItem systemItem="play" id="oHJ-cE-IdC">
+                            <connections>
+                                <action selector="userTappedPlay:" destination="-1" id="Gza-CP-YFH"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="9dV-Nc-CQB"/>
+                        <barButtonItem systemItem="action" id="daP-e4-Nsx">
+                            <connections>
+                                <action selector="userTappedAction:" destination="-1" id="PTS-5d-6fY"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="1i1-Ir-0tT"/>
+                        <barButtonItem systemItem="add" id="aBA-8R-T3S">
+                            <connections>
+                                <action selector="userTappedAdd:" destination="-1" id="Bxt-Zx-NFz"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iga-VF-kv0" secondAttribute="trailing" id="9iR-gT-hCY"/>
+                <constraint firstAttribute="trailing" secondItem="35" secondAttribute="trailing" constant="2" id="JyN-TI-GPF"/>
+                <constraint firstAttribute="bottom" secondItem="iga-VF-kv0" secondAttribute="bottom" id="X7l-BS-2zC"/>
+                <constraint firstItem="iga-VF-kv0" firstAttribute="leading" secondItem="35" secondAttribute="leading" id="gp6-qT-RBv"/>
+                <constraint firstItem="iga-VF-kv0" firstAttribute="top" secondItem="35" secondAttribute="bottom" id="pyX-0R-Heb"/>
+                <constraint firstItem="iga-VF-kv0" firstAttribute="leading" secondItem="34" secondAttribute="leading" id="sNP-Y8-40w"/>
+                <constraint firstItem="35" firstAttribute="top" secondItem="34" secondAttribute="top" id="tJb-ph-Djl"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+</document>

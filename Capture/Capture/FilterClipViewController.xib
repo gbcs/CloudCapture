@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterClipViewController">
+            <connections>
+                <outlet property="adjustButton" destination="901-Aq-xH8" id="ZPa-gY-TA5"/>
+                <outlet property="beginFilterButton" destination="Mmn-lv-BTu" id="nu3-j5-2wV"/>
+                <outlet property="cutScrubberBar" destination="bg0-Ut-lAw" id="436-mg-Hnf"/>
+                <outlet property="endFilterButton" destination="aTp-cL-glP" id="zDd-CS-xah"/>
+                <outlet property="filterButton" destination="9c3-a0-mgA" id="RcF-TH-sro"/>
+                <outlet property="largeThumbView" destination="92T-fl-NF6" id="my4-3w-82i"/>
+                <outlet property="scroller" destination="2kk-a7-q5j" id="SYv-CQ-Sb0"/>
+                <outlet property="startOverButton" destination="nov-ME-GaL" id="tlY-vP-PfW"/>
+                <outlet property="toolBar" destination="mi1-wP-gut" id="g7H-VA-0bg"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92T-fl-NF6" customClass="ThumbnailView">
+                    <rect key="frame" x="172" y="145" width="224" height="126"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="224" id="02b-Rt-Cu6"/>
+                        <constraint firstAttribute="height" constant="126" id="aTr-Yy-8il"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmn-lv-BTu" customClass="GradientAttributedButton">
+                    <rect key="frame" x="20" y="174" width="100" height="67"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="6ro-fv-8qb"/>
+                        <constraint firstAttribute="width" constant="100" id="YBx-y9-da2"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTp-cL-glP" customClass="GradientAttributedButton">
+                    <rect key="frame" x="448" y="174" width="100" height="67"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="3fz-92-Y6t"/>
+                        <constraint firstAttribute="width" constant="100" id="P8A-AE-krI"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bg0-Ut-lAw" customClass="CutScrubberBar">
+                    <rect key="frame" x="0.0" y="52" width="568" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="pue-kc-dda"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kk-a7-q5j">
+                    <rect key="frame" x="0.0" y="88" width="568" height="55"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="2J6-Sv-gsk"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="7EO-nS-28O"/>
+                    </connections>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUr-gC-ntt" userLabel="RedLineView">
+                    <rect key="frame" x="283" y="88" width="2" height="55"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="2" id="IPA-aI-rbh"/>
+                        <constraint firstAttribute="height" constant="55" id="Snc-Ye-vcL"/>
+                    </constraints>
+                </view>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mi1-wP-gut">
+                    <rect key="frame" x="0.0" y="276" width="568" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="Start Over" id="nov-ME-GaL">
+                            <connections>
+                                <action selector="userTappedStartOverButton:" destination="-1" id="yh7-N5-Gdq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="ecW-Qu-PH2"/>
+                        <barButtonItem title="Adjust: None" id="901-Aq-xH8">
+                            <connections>
+                                <action selector="userTappedAdjustButton:" destination="-1" id="YJH-so-pIR"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="Elw-Gd-kju"/>
+                        <barButtonItem title="Select Filter" id="9c3-a0-mgA">
+                            <connections>
+                                <action selector="userTappedSelectButton:" destination="-1" id="YjU-1A-yPY"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mi1-wP-gut" secondAttribute="bottom" id="0MT-1W-zDi"/>
+                <constraint firstItem="jUr-gC-ntt" firstAttribute="top" secondItem="2kk-a7-q5j" secondAttribute="top" id="1LG-OI-TE0"/>
+                <constraint firstItem="Mmn-lv-BTu" firstAttribute="top" secondItem="2kk-a7-q5j" secondAttribute="bottom" constant="31" id="4yw-sX-3Hl"/>
+                <constraint firstItem="bg0-Ut-lAw" firstAttribute="leading" secondItem="2kk-a7-q5j" secondAttribute="leading" id="5Sf-ek-FQN"/>
+                <constraint firstAttribute="centerX" secondItem="jUr-gC-ntt" secondAttribute="centerX" id="6T3-w4-oy2"/>
+                <constraint firstItem="2kk-a7-q5j" firstAttribute="trailing" secondItem="bg0-Ut-lAw" secondAttribute="trailing" id="82p-BS-lS6"/>
+                <constraint firstItem="mi1-wP-gut" firstAttribute="leading" secondItem="2kk-a7-q5j" secondAttribute="leading" id="8xb-Gq-lDg"/>
+                <constraint firstItem="2kk-a7-q5j" firstAttribute="top" secondItem="bg0-Ut-lAw" secondAttribute="bottom" constant="-8" id="FR8-FO-pSH"/>
+                <constraint firstItem="2kk-a7-q5j" firstAttribute="top" secondItem="bg0-Ut-lAw" secondAttribute="bottom" constant="-8" id="IUU-lY-WbO"/>
+                <constraint firstAttribute="trailing" secondItem="mi1-wP-gut" secondAttribute="trailing" id="Tcm-YS-314"/>
+                <constraint firstAttribute="trailing" secondItem="2kk-a7-q5j" secondAttribute="trailing" id="UVq-6F-oOb"/>
+                <constraint firstAttribute="centerX" secondItem="92T-fl-NF6" secondAttribute="centerX" id="Zkw-a0-CuB"/>
+                <constraint firstItem="92T-fl-NF6" firstAttribute="top" secondItem="2kk-a7-q5j" secondAttribute="bottom" constant="2" id="apB-cj-Ds1"/>
+                <constraint firstItem="aTp-cL-glP" firstAttribute="top" secondItem="2kk-a7-q5j" secondAttribute="bottom" constant="31" id="bVf-7r-tUA"/>
+                <constraint firstItem="mi1-wP-gut" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="c4X-dP-O8r"/>
+                <constraint firstItem="2kk-a7-q5j" firstAttribute="trailing" secondItem="mi1-wP-gut" secondAttribute="trailing" id="dbx-GR-pRG"/>
+                <constraint firstItem="bg0-Ut-lAw" firstAttribute="top" secondItem="1" secondAttribute="top" constant="52" id="eg3-FK-1Xc"/>
+                <constraint firstItem="mi1-wP-gut" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="ffk-wt-5M7"/>
+                <constraint firstItem="2kk-a7-q5j" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="g6B-QX-C7w"/>
+                <constraint firstItem="mi1-wP-gut" firstAttribute="top" secondItem="92T-fl-NF6" secondAttribute="bottom" constant="5" id="jZJ-Ld-qIh"/>
+                <constraint firstAttribute="trailing" secondItem="mi1-wP-gut" secondAttribute="trailing" id="ohU-he-Tx6"/>
+                <constraint firstItem="Mmn-lv-BTu" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="p5o-HO-2k0"/>
+                <constraint firstAttribute="trailing" secondItem="aTp-cL-glP" secondAttribute="trailing" constant="20" id="zJu-r6-722"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

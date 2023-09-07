@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CutConfirmViewController">
+            <connections>
+                <outlet property="activityView" destination="z1v-f6-OfZ" id="Dax-ia-vQh"/>
+                <outlet property="playButton" destination="5Wx-uJ-OAs" id="QTA-IB-VOh"/>
+                <outlet property="processingLabel" destination="9Se-p8-X3F" id="260-E7-cRX"/>
+                <outlet property="progress" destination="Yfd-Av-FJe" id="IcV-YC-xyt"/>
+                <outlet property="rotateButton" destination="PpM-yH-CHD" id="0Z5-7C-5bb"/>
+                <outlet property="view" destination="1" id="vSb-49-DxE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Yfd-Av-FJe">
+                    <rect key="frame" x="106" y="501" width="528" height="2"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="528" id="8Wy-tD-TfZ"/>
+                        <constraint firstAttribute="height" constant="2" id="VnS-2B-hfW"/>
+                    </constraints>
+                    <color key="progressTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </progressView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="z1v-f6-OfZ">
+                    <rect key="frame" x="352" y="429" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="WmR-cc-NmE"/>
+                        <constraint firstAttribute="width" constant="37" id="YI4-bx-zXO"/>
+                    </constraints>
+                </activityIndicatorView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Processing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Se-p8-X3F">
+                    <rect key="frame" x="341" y="538" width="86" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="86" id="Fov-Lb-Hss"/>
+                        <constraint firstAttribute="height" constant="21" id="zZU-Dh-0WD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view opaque="NO" alpha="0.019999999552965164" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Wx-uJ-OAs" customClass="GradientAttributedButton">
+                    <rect key="frame" x="472" y="621" width="196" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="196" id="UWQ-4t-a65"/>
+                        <constraint firstAttribute="height" constant="44" id="gix-3F-m0b"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" alpha="0.019999999552965164" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PpM-yH-CHD" customClass="GradientAttributedButton">
+                    <rect key="frame" x="100" y="621" width="196" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="GHM-Yd-oiM"/>
+                        <constraint firstAttribute="width" constant="196" id="hsx-K2-lRw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PpM-yH-CHD" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="100" id="8x0-ef-KeY"/>
+                <constraint firstAttribute="centerX" secondItem="Yfd-Av-FJe" secondAttribute="centerX" constant="14" id="IN7-wC-Oh8"/>
+                <constraint firstItem="9Se-p8-X3F" firstAttribute="top" secondItem="Yfd-Av-FJe" secondAttribute="bottom" constant="35" id="L0L-71-t1a"/>
+                <constraint firstItem="PpM-yH-CHD" firstAttribute="top" secondItem="Yfd-Av-FJe" secondAttribute="bottom" constant="118" id="LCD-iY-PrZ"/>
+                <constraint firstAttribute="centerX" secondItem="9Se-p8-X3F" secondAttribute="centerX" id="fBo-E0-NFf"/>
+                <constraint firstItem="Yfd-Av-FJe" firstAttribute="top" secondItem="z1v-f6-OfZ" secondAttribute="bottom" constant="35" id="fM7-5N-zZb"/>
+                <constraint firstAttribute="centerY" secondItem="Yfd-Av-FJe" secondAttribute="centerY" id="jn4-ED-ZHy"/>
+                <constraint firstAttribute="centerX" secondItem="z1v-f6-OfZ" secondAttribute="centerX" constant="13.5" id="tfl-iT-UJx"/>
+                <constraint firstAttribute="trailing" secondItem="5Wx-uJ-OAs" secondAttribute="trailing" constant="100" id="zZ1-Nm-VWw"/>
+                <constraint firstItem="5Wx-uJ-OAs" firstAttribute="top" secondItem="Yfd-Av-FJe" secondAttribute="bottom" constant="118" id="zmH-bQ-iu4"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+        </view>
+    </objects>
+</document>

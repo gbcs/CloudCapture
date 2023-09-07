@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateMovieViewController">
+            <connections>
+                <outlet property="addAudioButton" destination="jfG-VM-6iH" id="h27-hs-xct"/>
+                <outlet property="addVideoButton" destination="oYk-9E-44o" id="QVA-fy-lMr"/>
+                <outlet property="timelineBar" destination="SRF-rS-SFv" id="GLb-ww-jmf"/>
+                <outlet property="toolBar" destination="udp-Zq-lye" id="rOw-Ug-BeL"/>
+                <outlet property="transitionButton" destination="xF0-kt-oW0" id="Fni-5Q-Yhn"/>
+                <outlet property="videoScroller" destination="UfT-eK-3Mh" id="qmd-t5-mnL"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" id="udp-Zq-lye">
+                    <rect key="frame" x="0.0" y="276" width="480" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="Add Video" id="oYk-9E-44o">
+                            <connections>
+                                <action selector="userTappedAddVideo:" destination="-1" id="Hqj-oe-Q4R"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="Ldo-MC-pnu"/>
+                        <barButtonItem title="Add Audio" id="jfG-VM-6iH">
+                            <connections>
+                                <action selector="userTappedAddAudio:" destination="-1" id="bXq-th-H6n"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="wMt-Y7-bJc"/>
+                        <barButtonItem enabled="NO" title="Edit Transitions" style="plain" id="xF0-kt-oW0">
+                            <connections>
+                                <action selector="userTappedTransitionButton:" destination="-1" id="EqO-tK-peG"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <view contentMode="scaleToFill" id="SRF-rS-SFv" customClass="CutScrubberBar">
+                    <rect key="frame" x="0.0" y="34" width="480" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="UfT-eK-3Mh">
+                    <rect key="frame" x="0.0" y="67" width="480" height="210"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="sgy-rB-xbe"/>
+                    </connections>
+                </scrollView>
+                <view contentMode="scaleToFill" id="fx2-9t-11i">
+                    <rect key="frame" x="239" y="62" width="3" height="168"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

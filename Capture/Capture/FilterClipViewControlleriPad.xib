@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterClipViewController">
+            <connections>
+                <outlet property="adjustButton" destination="a4e-5C-9eU" id="c3i-vM-iee"/>
+                <outlet property="beginFilterButton" destination="PGl-aq-TOs" id="dTD-xw-GjD"/>
+                <outlet property="cutScrubberBar" destination="f7f-zQ-dzv" id="Yvn-8L-Dpp"/>
+                <outlet property="endFilterButton" destination="blu-jI-2KA" id="TiB-pz-QnD"/>
+                <outlet property="filterButton" destination="iux-Af-cc6" id="umW-Ne-cEq"/>
+                <outlet property="largeThumbView" destination="V5r-vF-WA4" id="RNp-pg-NaL"/>
+                <outlet property="scroller" destination="BVX-HM-wfX" id="gH5-5A-zp0"/>
+                <outlet property="startOverButton" destination="hvo-3c-QzL" id="rTe-hV-Mdt"/>
+                <outlet property="toolBar" destination="6xX-2J-sBP" id="99b-9z-zF4"/>
+                <outlet property="view" destination="1" id="cyr-8m-2dQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="6xX-2J-sBP">
+                    <rect key="frame" x="0.0" y="960" width="768" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="TMo-Nd-53l"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem title="Start Over" id="hvo-3c-QzL">
+                            <connections>
+                                <action selector="userTappedStartOverButton:" destination="-1" id="9Xc-79-R59"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="0Gv-ga-MST"/>
+                        <barButtonItem title="Adjust: None" id="a4e-5C-9eU">
+                            <connections>
+                                <action selector="userTappedAdjustButton:" destination="-1" id="wjP-Qy-Y8K"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="oZQ-KK-65g"/>
+                        <barButtonItem title="Select Filter" id="iux-Af-cc6">
+                            <connections>
+                                <action selector="userTappedSelectButton:" destination="-1" id="AAE-D1-mJv"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <view opaque="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PGl-aq-TOs" customClass="GradientAttributedButton">
+                    <rect key="frame" x="20" y="369" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="3EL-hH-WAa"/>
+                        <constraint firstAttribute="width" constant="100" id="yhX-79-x9L"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7f-zQ-dzv" customClass="CutScrubberBar">
+                    <rect key="frame" x="0.0" y="80" width="768" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="cq8-Zq-q6Q"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVX-HM-wfX">
+                    <rect key="frame" x="0.0" y="122" width="768" height="82"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="82" id="UZN-us-qEH"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="wLx-k8-mJk"/>
+                    </connections>
+                </scrollView>
+                <view opaque="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blu-jI-2KA" customClass="GradientAttributedButton">
+                    <rect key="frame" x="648" y="376" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="j2g-7E-Ji0"/>
+                        <constraint firstAttribute="height" constant="100" id="jTe-wR-mdm"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V5r-vF-WA4" customClass="ThumbnailView">
+                    <rect key="frame" x="128" y="282" width="512" height="288"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="288" id="Mgo-h9-sCa"/>
+                        <constraint firstAttribute="width" constant="512" id="pMz-YD-e7c"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kFb-A5-enQ">
+                    <rect key="frame" x="383" y="122" width="2" height="82"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="82" id="qNP-Vc-jmL"/>
+                        <constraint firstAttribute="width" constant="2" id="ypV-wv-3Mm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="f7f-zQ-dzv" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="4eN-tR-Sls"/>
+                <constraint firstItem="kFb-A5-enQ" firstAttribute="top" secondItem="1" secondAttribute="top" constant="122" id="EWo-BO-aAl"/>
+                <constraint firstItem="f7f-zQ-dzv" firstAttribute="top" secondItem="1" secondAttribute="top" constant="80" id="IM3-Oc-6FG"/>
+                <constraint firstAttribute="bottom" secondItem="6xX-2J-sBP" secondAttribute="bottom" id="JV4-nZ-0gh"/>
+                <constraint firstItem="BVX-HM-wfX" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="R5w-PO-RCN"/>
+                <constraint firstItem="blu-jI-2KA" firstAttribute="centerY" secondItem="V5r-vF-WA4" secondAttribute="centerY" id="Sq3-vF-JRL"/>
+                <constraint firstItem="V5r-vF-WA4" firstAttribute="top" secondItem="BVX-HM-wfX" secondAttribute="bottom" constant="78" id="WqK-1D-bgK"/>
+                <constraint firstItem="6xX-2J-sBP" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Ydd-cn-HMD"/>
+                <constraint firstAttribute="trailing" secondItem="f7f-zQ-dzv" secondAttribute="trailing" id="fm9-Lg-XSa"/>
+                <constraint firstItem="V5r-vF-WA4" firstAttribute="centerY" secondItem="PGl-aq-TOs" secondAttribute="centerY" constant="7" id="gyB-7g-as7"/>
+                <constraint firstItem="V5r-vF-WA4" firstAttribute="leading" secondItem="PGl-aq-TOs" secondAttribute="trailing" constant="8" id="kie-8l-5Yb"/>
+                <constraint firstAttribute="trailing" secondItem="6xX-2J-sBP" secondAttribute="trailing" id="sgM-SB-HFD"/>
+                <constraint firstAttribute="centerX" secondItem="V5r-vF-WA4" secondAttribute="centerX" id="wLM-2u-DzJ"/>
+                <constraint firstItem="BVX-HM-wfX" firstAttribute="top" secondItem="f7f-zQ-dzv" secondAttribute="bottom" constant="-2" id="wzF-Xg-FaF"/>
+                <constraint firstAttribute="trailing" secondItem="BVX-HM-wfX" secondAttribute="trailing" id="xEp-7h-ldV"/>
+                <constraint firstAttribute="centerX" secondItem="kFb-A5-enQ" secondAttribute="centerX" id="xda-5A-Wzk"/>
+                <constraint firstItem="blu-jI-2KA" firstAttribute="leading" secondItem="V5r-vF-WA4" secondAttribute="trailing" constant="8" id="zsr-bN-C7V"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+        </view>
+    </objects>
+</document>

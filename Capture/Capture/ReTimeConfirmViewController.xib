@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReTimeConfirmViewController">
+            <connections>
+                <outlet property="activityView" destination="2gY-Wj-vAD" id="idE-uq-QKt"/>
+                <outlet property="playButton" destination="Mit-JZ-S5X" id="Di4-NC-8Ic"/>
+                <outlet property="processingLabel" destination="oqF-l8-ee8" id="Qbv-Eo-gWW"/>
+                <outlet property="progress" destination="QuG-qe-o8N" id="yuc-Ji-W5R"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="QuG-qe-o8N">
+                    <rect key="frame" x="20" y="209" width="528" height="3"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="progressTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </progressView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2gY-Wj-vAD">
+                    <rect key="frame" x="266" y="99" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Processing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqF-l8-ee8">
+                    <rect key="frame" x="241" y="153" width="86" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view opaque="NO" alpha="0.019999999552965164" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mit-JZ-S5X" customClass="GradientAttributedButton">
+                    <rect key="frame" x="352" y="256" width="196" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Mit-JZ-S5X" firstAttribute="top" secondItem="QuG-qe-o8N" secondAttribute="bottom" constant="45" id="9Y2-tK-vGb"/>
+                <constraint firstItem="QuG-qe-o8N" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="CGo-fK-dnl"/>
+                <constraint firstAttribute="bottom" secondItem="Mit-JZ-S5X" secondAttribute="bottom" constant="20" symbolic="YES" id="JwJ-cJ-k0H"/>
+                <constraint firstItem="Mit-JZ-S5X" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="352" id="S0q-vD-DVx"/>
+                <constraint firstAttribute="centerX" secondItem="2gY-Wj-vAD" secondAttribute="centerX" id="S26-6S-lcs"/>
+                <constraint firstItem="2gY-Wj-vAD" firstAttribute="top" secondItem="1" secondAttribute="top" constant="99" id="ULO-7o-Dtd"/>
+                <constraint firstItem="QuG-qe-o8N" firstAttribute="top" secondItem="oqF-l8-ee8" secondAttribute="bottom" constant="35" id="Wad-tX-D2O"/>
+                <constraint firstAttribute="centerX" secondItem="oqF-l8-ee8" secondAttribute="centerX" id="Zr9-aQ-PSg"/>
+                <constraint firstItem="QuG-qe-o8N" firstAttribute="trailing" secondItem="Mit-JZ-S5X" secondAttribute="trailing" id="do7-vY-iKV"/>
+                <constraint firstAttribute="trailing" secondItem="QuG-qe-o8N" secondAttribute="trailing" constant="20" symbolic="YES" id="f4J-H8-tfp"/>
+                <constraint firstItem="oqF-l8-ee8" firstAttribute="top" secondItem="2gY-Wj-vAD" secondAttribute="bottom" constant="17" id="wfY-pU-d1l"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

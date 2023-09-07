@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CutClipViewController">
+            <connections>
+                <outlet property="beginCutButton" destination="b9e-8Z-xfj" id="fEG-IM-vqO"/>
+                <outlet property="cutScrubberBar" destination="MHp-gR-ScZ" id="qn4-f2-geD"/>
+                <outlet property="endCutButton" destination="B4o-Di-Vgp" id="EU9-lT-zwa"/>
+                <outlet property="extractAudioButton" destination="d1c-oP-xdi" id="1We-oA-TG6"/>
+                <outlet property="largeThumbView" destination="Txh-67-yk8" id="wBK-pL-po7"/>
+                <outlet property="savePicButton" destination="DqK-Ih-kxk" id="Dau-Ge-hRa"/>
+                <outlet property="scroller" destination="y2p-Nw-Phs" id="6Ia-nW-Mdg"/>
+                <outlet property="startOverButton" destination="pdk-fN-2qj" id="oCT-DA-6tg"/>
+                <outlet property="toolBar" destination="4Aa-1w-ShP" id="KlU-ya-GMA"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHp-gR-ScZ" customClass="CutScrubberBar">
+                    <rect key="frame" x="0.0" y="52" width="480" height="38"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="3UD-PV-eg1"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9e-8Z-xfj" customClass="GradientAttributedButton">
+                    <rect key="frame" x="20" y="174" width="100" height="67"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="N1B-1I-JH5"/>
+                        <constraint firstAttribute="height" constant="67" id="Otf-dX-fWl"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Txh-67-yk8" customClass="ThumbnailView">
+                    <rect key="frame" x="128" y="145" width="224" height="126"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="126" id="CGu-kM-wQv"/>
+                        <constraint firstAttribute="width" constant="224" id="pGn-xY-2Bz"/>
+                    </constraints>
+                </view>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Aa-1w-ShP">
+                    <rect key="frame" x="0.0" y="276" width="480" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="Start Over" id="pdk-fN-2qj">
+                            <connections>
+                                <action selector="userTappedStartOverButton:" destination="-1" id="SX0-zY-vu8"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="ZgX-fb-uRD"/>
+                        <barButtonItem title="Extract Audio" id="d1c-oP-xdi">
+                            <connections>
+                                <action selector="userTappedExtractAudioButton:" destination="-1" id="c8B-hR-s6i"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="ZEU-Hh-ejo"/>
+                        <barButtonItem title="Save Picture" id="DqK-Ih-kxk">
+                            <connections>
+                                <action selector="userTappedSavePictureButton:" destination="-1" id="uyb-m9-HVy"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <view opaque="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B4o-Di-Vgp" customClass="GradientAttributedButton">
+                    <rect key="frame" x="360" y="174" width="100" height="67"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="YNO-7k-akC"/>
+                        <constraint firstAttribute="height" constant="67" id="rcz-1R-icO"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2p-Nw-Phs">
+                    <rect key="frame" x="0.0" y="88" width="480" height="55"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="Lh9-nt-fpa"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="WSl-W4-cAr"/>
+                    </connections>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgU-QD-B55" userLabel="RedLineView">
+                    <rect key="frame" x="239" y="84" width="2" height="55"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="2" id="rqD-i6-hqI"/>
+                        <constraint firstAttribute="height" constant="55" id="wUS-bU-O9H"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dgU-QD-B55" firstAttribute="top" secondItem="1" secondAttribute="top" constant="84" id="4cU-vu-zD3"/>
+                <constraint firstItem="B4o-Di-Vgp" firstAttribute="top" secondItem="y2p-Nw-Phs" secondAttribute="bottom" constant="31" id="77P-6k-QX6"/>
+                <constraint firstAttribute="trailing" secondItem="B4o-Di-Vgp" secondAttribute="trailing" constant="20" id="Hd7-tN-scz"/>
+                <constraint firstItem="4Aa-1w-ShP" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="IDM-uA-jgc"/>
+                <constraint firstItem="MHp-gR-ScZ" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Upg-pl-Mgg"/>
+                <constraint firstItem="MHp-gR-ScZ" firstAttribute="top" secondItem="1" secondAttribute="top" constant="52" id="WfQ-b0-Vfh"/>
+                <constraint firstAttribute="trailing" secondItem="4Aa-1w-ShP" secondAttribute="trailing" id="YDy-Iz-3vb"/>
+                <constraint firstItem="b9e-8Z-xfj" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="Zn0-br-eeu"/>
+                <constraint firstAttribute="centerX" secondItem="Txh-67-yk8" secondAttribute="centerX" id="aQn-ZR-7iW"/>
+                <constraint firstAttribute="bottom" secondItem="4Aa-1w-ShP" secondAttribute="bottom" id="nis-w7-AP8"/>
+                <constraint firstAttribute="trailing" secondItem="MHp-gR-ScZ" secondAttribute="trailing" id="o5M-4G-LJa"/>
+                <constraint firstItem="Txh-67-yk8" firstAttribute="top" secondItem="y2p-Nw-Phs" secondAttribute="bottom" constant="2" id="pbi-M5-Hyr"/>
+                <constraint firstItem="b9e-8Z-xfj" firstAttribute="top" secondItem="y2p-Nw-Phs" secondAttribute="bottom" constant="31" id="phP-sJ-pxV"/>
+                <constraint firstItem="y2p-Nw-Phs" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="qcv-Ay-rIh"/>
+                <constraint firstItem="y2p-Nw-Phs" firstAttribute="top" secondItem="MHp-gR-ScZ" secondAttribute="bottom" constant="-2" id="wOh-ij-cbk"/>
+                <constraint firstAttribute="centerX" secondItem="dgU-QD-B55" secondAttribute="centerX" id="ym0-4I-Sv7"/>
+                <constraint firstAttribute="trailing" secondItem="y2p-Nw-Phs" secondAttribute="trailing" id="z0q-4r-8KK"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

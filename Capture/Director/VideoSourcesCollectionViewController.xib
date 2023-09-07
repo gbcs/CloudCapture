@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoSourcesCollectionViewController">
+            <connections>
+                <outlet property="collectionViewPack" destination="35" id="44"/>
+                <outlet property="libraryButton" destination="IB0-Ry-ZZk" id="4th-k7-1bc"/>
+                <outlet property="pictureButton" destination="Fma-SK-JXa" id="Jt6-O5-MHv"/>
+                <outlet property="startButton" destination="Ubi-TH-yvT" id="OP2-M2-Di0"/>
+                <outlet property="stopButton" destination="Je9-g5-N1R" id="ygf-bz-d8l"/>
+                <outlet property="toolbar" destination="l9Y-3a-1dy" id="FGK-se-dFp"/>
+                <outlet property="trashButton" destination="bd0-hM-0De" id="uRD-fX-IKd"/>
+                <outlet property="view" destination="34" id="41"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="34">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="35">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="264"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <inset key="scrollIndicatorInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="3" id="36">
+                        <size key="itemSize" width="230" height="215"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="42"/>
+                        <outlet property="delegate" destination="-1" id="43"/>
+                    </connections>
+                </collectionView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="l9Y-3a-1dy">
+                    <rect key="frame" x="0.0" y="276" width="480" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="trash" id="bd0-hM-0De">
+                            <connections>
+                                <action selector="userTappedTrash:" destination="-1" id="hBJ-Ef-soX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="eGw-Yt-ozd"/>
+                        <barButtonItem title="Library" style="plain" id="IB0-Ry-ZZk">
+                            <connections>
+                                <action selector="userTappedLibrary:" destination="-1" id="Bbp-73-lcF"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="1WX-NA-6Ln"/>
+                        <barButtonItem title="Picture" style="plain" id="Fma-SK-JXa">
+                            <connections>
+                                <action selector="userTappedPictureButton:" destination="-1" id="cO0-yv-jip"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="7Xn-h1-nQa"/>
+                        <barButtonItem title="Stop" style="plain" id="Je9-g5-N1R">
+                            <connections>
+                                <action selector="userTappedStop:" destination="-1" id="v7P-PG-nxu"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="7ZX-8K-DSg"/>
+                        <barButtonItem title="Start" style="plain" id="Ubi-TH-yvT">
+                            <connections>
+                                <action selector="userTappedStart:" destination="-1" id="sKm-6q-sTx"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="l9Y-3a-1dy" firstAttribute="top" secondItem="35" secondAttribute="bottom" constant="12" id="3dG-8W-MNX"/>
+                <constraint firstAttribute="trailing" secondItem="35" secondAttribute="trailing" id="7PB-0H-j8j"/>
+                <constraint firstItem="35" firstAttribute="trailing" secondItem="l9Y-3a-1dy" secondAttribute="trailing" id="ScO-B6-Rvv"/>
+                <constraint firstItem="35" firstAttribute="top" secondItem="34" secondAttribute="top" id="gxo-bw-oAG"/>
+                <constraint firstItem="l9Y-3a-1dy" firstAttribute="leading" secondItem="35" secondAttribute="leading" id="m5x-Wr-dih"/>
+                <constraint firstItem="35" firstAttribute="leading" secondItem="34" secondAttribute="leading" id="p1p-f5-fdE"/>
+                <constraint firstAttribute="bottom" secondItem="l9Y-3a-1dy" secondAttribute="bottom" id="v2s-0J-SsL"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+</document>

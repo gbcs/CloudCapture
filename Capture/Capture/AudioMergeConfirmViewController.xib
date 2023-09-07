@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudioMergeConfirmViewController">
+            <connections>
+                <outlet property="activityView" destination="Av5-rA-mfG" id="eqj-lb-B02"/>
+                <outlet property="playButton" destination="dAH-aq-Waz" id="BYi-g0-6Op"/>
+                <outlet property="processingLabel" destination="3TG-Re-DJH" id="1L3-xD-BSg"/>
+                <outlet property="progress" destination="W2C-mF-KAG" id="57b-Nr-47J"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="W2C-mF-KAG">
+                    <rect key="frame" x="20" y="170" width="528" height="3"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="progressTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </progressView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Av5-rA-mfG">
+                    <rect key="frame" x="266" y="59" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Processing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TG-Re-DJH">
+                    <rect key="frame" x="229" y="112" width="110" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="G8J-Le-fh0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view opaque="NO" alpha="0.019999999552965164" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAH-aq-Waz" customClass="GradientAttributedButton">
+                    <rect key="frame" x="352" y="216" width="196" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="W2C-mF-KAG" secondAttribute="centerX" id="3nj-JZ-S1N"/>
+                <constraint firstItem="W2C-mF-KAG" firstAttribute="top" secondItem="3TG-Re-DJH" secondAttribute="bottom" constant="37" id="6is-CO-JPg"/>
+                <constraint firstItem="W2C-mF-KAG" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="6lV-9f-Q1x"/>
+                <constraint firstAttribute="centerX" secondItem="Av5-rA-mfG" secondAttribute="centerX" id="DFG-Mf-VMS"/>
+                <constraint firstItem="dAH-aq-Waz" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="352" id="Gs5-qB-MDf"/>
+                <constraint firstItem="3TG-Re-DJH" firstAttribute="centerX" secondItem="W2C-mF-KAG" secondAttribute="centerX" id="Kwb-7o-FyO"/>
+                <constraint firstItem="dAH-aq-Waz" firstAttribute="top" secondItem="W2C-mF-KAG" secondAttribute="bottom" constant="44" id="URC-Sy-nzG"/>
+                <constraint firstItem="3TG-Re-DJH" firstAttribute="top" secondItem="Av5-rA-mfG" secondAttribute="bottom" constant="16" id="afs-dG-dif"/>
+                <constraint firstAttribute="trailing" secondItem="W2C-mF-KAG" secondAttribute="trailing" constant="20" symbolic="YES" id="csu-GO-Mfc"/>
+                <constraint firstAttribute="bottom" secondItem="dAH-aq-Waz" secondAttribute="bottom" constant="60" id="f2N-TN-ToV"/>
+                <constraint firstItem="dAH-aq-Waz" firstAttribute="trailing" secondItem="W2C-mF-KAG" secondAttribute="trailing" id="jHS-VK-bcr"/>
+                <constraint firstItem="Av5-rA-mfG" firstAttribute="top" secondItem="1" secondAttribute="top" constant="59" id="msG-K4-l1D"/>
+                <constraint firstAttribute="centerX" secondItem="3TG-Re-DJH" secondAttribute="centerX" id="sni-N4-P5k"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

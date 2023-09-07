@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateMoviePreviewViewController">
+            <connections>
+                <outlet property="activityView" destination="jMr-bQ-xc2" id="SIj-mF-Sdr"/>
+                <outlet property="playButton" destination="IkP-yd-xTd" id="NaU-jU-8sa"/>
+                <outlet property="processingLabel" destination="Xhe-Oz-4dN" id="tao-XE-IRJ"/>
+                <outlet property="progress" destination="BbW-Bz-tcH" id="5B8-aA-Z6N"/>
+                <outlet property="view" destination="1" id="kiJ-Sk-MCb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="BbW-Bz-tcH">
+                    <rect key="frame" x="120" y="501" width="528" height="2"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="528" id="Lhb-wv-dn6"/>
+                        <constraint firstAttribute="height" constant="2" id="wLw-wo-6SO"/>
+                    </constraints>
+                    <color key="progressTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </progressView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="jMr-bQ-xc2">
+                    <rect key="frame" x="366" y="411" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="d0D-Y2-2K4"/>
+                        <constraint firstAttribute="width" constant="37" id="ebc-5j-rqu"/>
+                    </constraints>
+                </activityIndicatorView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Processing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhe-Oz-4dN">
+                    <rect key="frame" x="341" y="548" width="86" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="86" id="AWH-5V-5V0"/>
+                        <constraint firstAttribute="height" constant="21" id="EaL-E8-7Wf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view opaque="NO" alpha="0.019999999552965164" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IkP-yd-xTd" customClass="GradientAttributedButton">
+                    <rect key="frame" x="490" y="608" width="158" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="158" id="X5c-TH-AGG"/>
+                        <constraint firstAttribute="height" constant="44" id="feg-Gs-13G"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="BbW-Bz-tcH" secondAttribute="centerX" id="8t4-gM-xSl"/>
+                <constraint firstAttribute="trailing" secondItem="IkP-yd-xTd" secondAttribute="trailing" constant="120" id="DHM-h3-9On"/>
+                <constraint firstAttribute="centerX" secondItem="Xhe-Oz-4dN" secondAttribute="centerX" id="E0Z-PK-gld"/>
+                <constraint firstAttribute="centerY" secondItem="BbW-Bz-tcH" secondAttribute="centerY" id="hDy-K3-H1m"/>
+                <constraint firstItem="IkP-yd-xTd" firstAttribute="top" secondItem="BbW-Bz-tcH" secondAttribute="bottom" constant="105" id="kKy-jB-eie"/>
+                <constraint firstItem="BbW-Bz-tcH" firstAttribute="top" secondItem="jMr-bQ-xc2" secondAttribute="bottom" constant="53" id="pb0-Wb-Tak"/>
+                <constraint firstAttribute="centerX" secondItem="jMr-bQ-xc2" secondAttribute="centerX" id="vAO-xI-QEE"/>
+                <constraint firstItem="Xhe-Oz-4dN" firstAttribute="top" secondItem="BbW-Bz-tcH" secondAttribute="bottom" constant="45" id="yKs-Ll-Xno"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+        </view>
+    </objects>
+</document>

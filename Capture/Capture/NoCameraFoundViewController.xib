@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoCameraFoundViewController">
+            <connections>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Camera Was Not Found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkJ-9K-cOe">
+                    <rect key="frame" x="20" y="144" width="440" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="BN5-em-y0E"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Restrictions in the Settings App For Camera " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qq-cA-Msm">
+                    <rect key="frame" x="20" y="203" width="440" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="4nF-OY-Lav"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloud Capture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avr-zr-iJM">
+                    <rect key="frame" x="20" y="93" width="440" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="eNH-iD-hVA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HkJ-9K-cOe" firstAttribute="top" secondItem="avr-zr-iJM" secondAttribute="bottom" constant="30" id="0Ec-mn-DCP"/>
+                <constraint firstAttribute="trailing" secondItem="HkJ-9K-cOe" secondAttribute="trailing" constant="20" symbolic="YES" id="1Hx-W2-Uk2"/>
+                <constraint firstItem="7qq-cA-Msm" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="3LQ-wb-MQw"/>
+                <constraint firstItem="7qq-cA-Msm" firstAttribute="top" secondItem="HkJ-9K-cOe" secondAttribute="bottom" constant="27" id="EEG-1p-vfx"/>
+                <constraint firstItem="avr-zr-iJM" firstAttribute="trailing" secondItem="HkJ-9K-cOe" secondAttribute="trailing" id="SOI-By-uJN"/>
+                <constraint firstItem="HkJ-9K-cOe" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="VLf-xX-n6D"/>
+                <constraint firstItem="HkJ-9K-cOe" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="WfQ-9P-mkR"/>
+                <constraint firstItem="avr-zr-iJM" firstAttribute="leading" secondItem="HkJ-9K-cOe" secondAttribute="leading" id="ZIQ-R5-u4n"/>
+                <constraint firstAttribute="trailing" secondItem="7qq-cA-Msm" secondAttribute="trailing" constant="20" id="cnI-k6-ehA"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

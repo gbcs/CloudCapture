@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstStartViewController">
+            <connections>
+                <outlet property="locButton" destination="vZh-5Q-MBH" id="5Ce-Lz-6bf"/>
+                <outlet property="micButton" destination="AXr-e1-L0a" id="DvD-sk-u11"/>
+                <outlet property="photoButton" destination="VH4-U8-ir2" id="iho-Lu-pfe"/>
+                <outlet property="view" destination="1" id="nbx-59-IXq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for downloading CloudCapt Camera and Edit Studio." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52i-sI-Tfr">
+                    <rect key="frame" x="56" y="89" width="656" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="W0Z-hE-zn9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Zt-gH-QVg">
+                    <rect key="frame" x="101" y="324" width="567" height="312"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Microphone - Allow audio to be used in recordings." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="QyM-qQ-YO6">
+                            <rect key="frame" x="34" y="132" width="288" height="41"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera Roll / Photos Album - Take pictures, use pictures in filters, save video to camera roll." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="279" translatesAutoresizingMaskIntoConstraints="NO" id="aBv-ax-tU9">
+                            <rect key="frame" x="34" y="53" width="279" height="61"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Services - Allow use of location metadata." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="251" translatesAutoresizingMaskIntoConstraints="NO" id="CWt-wH-aNV">
+                            <rect key="frame" x="34" y="186" width="251" height="41"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VH4-U8-ir2">
+                            <rect key="frame" x="397" y="67" width="68" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="Request">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="userTappedPhotoRequest:" destination="-1" eventType="touchUpInside" id="lL9-Z8-gfd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZh-5Q-MBH">
+                            <rect key="frame" x="399" y="190" width="64" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="Request">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="userTappedLocationRequest:" destination="-1" eventType="touchUpInside" id="AVs-Bi-ISc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXr-e1-L0a">
+                            <rect key="frame" x="399" y="139" width="64" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="Request">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="userTappedMicRequest:" destination="-1" eventType="touchUpInside" id="W95-Iu-fYo"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="QyM-qQ-YO6" firstAttribute="leading" secondItem="aBv-ax-tU9" secondAttribute="leading" id="5S9-0v-HqH"/>
+                        <constraint firstAttribute="bottom" secondItem="CWt-wH-aNV" secondAttribute="bottom" constant="85" id="A6p-et-qaR"/>
+                        <constraint firstItem="QyM-qQ-YO6" firstAttribute="top" secondItem="aBv-ax-tU9" secondAttribute="bottom" constant="18" id="D3k-YC-2jO"/>
+                        <constraint firstItem="AXr-e1-L0a" firstAttribute="leading" secondItem="QyM-qQ-YO6" secondAttribute="trailing" constant="77" id="Qdz-kX-ohG"/>
+                        <constraint firstItem="vZh-5Q-MBH" firstAttribute="leading" secondItem="AXr-e1-L0a" secondAttribute="leading" id="RSU-fb-RPm"/>
+                        <constraint firstItem="VH4-U8-ir2" firstAttribute="leading" secondItem="aBv-ax-tU9" secondAttribute="trailing" constant="84" id="Rdg-IJ-0hX"/>
+                        <constraint firstItem="aBv-ax-tU9" firstAttribute="leading" secondItem="3Zt-gH-QVg" secondAttribute="leading" constant="34" id="SkO-j3-Tr6"/>
+                        <constraint firstAttribute="width" constant="567" id="T8f-wq-Ja0"/>
+                        <constraint firstItem="VH4-U8-ir2" firstAttribute="centerX" secondItem="AXr-e1-L0a" secondAttribute="centerX" id="XDb-YJ-v1I"/>
+                        <constraint firstItem="VH4-U8-ir2" firstAttribute="centerY" secondItem="aBv-ax-tU9" secondAttribute="centerY" id="Yk5-oJ-pzs"/>
+                        <constraint firstItem="QyM-qQ-YO6" firstAttribute="leading" secondItem="CWt-wH-aNV" secondAttribute="leading" id="dWw-Ql-adm"/>
+                        <constraint firstItem="aBv-ax-tU9" firstAttribute="top" secondItem="3Zt-gH-QVg" secondAttribute="top" constant="53" id="gCp-83-eTT"/>
+                        <constraint firstItem="CWt-wH-aNV" firstAttribute="top" secondItem="QyM-qQ-YO6" secondAttribute="bottom" constant="13" id="i8r-qd-Tsd"/>
+                        <constraint firstItem="CWt-wH-aNV" firstAttribute="centerY" secondItem="vZh-5Q-MBH" secondAttribute="centerY" id="nIm-3t-Nud"/>
+                        <constraint firstAttribute="height" constant="312" id="rL5-YL-fm6"/>
+                        <constraint firstItem="vZh-5Q-MBH" firstAttribute="top" secondItem="AXr-e1-L0a" secondAttribute="bottom" constant="18" id="vrR-M3-poU"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap 'Request' to grant permission for:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToJ-VY-bGx">
+                    <rect key="frame" x="240" y="176" width="289" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="KRl-hv-AZz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ToJ-VY-bGx" firstAttribute="top" secondItem="1" secondAttribute="top" constant="176" id="0Wj-UV-ONJ"/>
+                <constraint firstAttribute="centerX" secondItem="ToJ-VY-bGx" secondAttribute="centerX" id="O0Y-nv-1tA"/>
+                <constraint firstAttribute="centerX" secondItem="52i-sI-Tfr" secondAttribute="centerX" id="Qwa-DQ-LyI"/>
+                <constraint firstItem="ToJ-VY-bGx" firstAttribute="centerX" secondItem="3Zt-gH-QVg" secondAttribute="centerX" id="SVM-fQ-PMy"/>
+                <constraint firstItem="52i-sI-Tfr" firstAttribute="top" secondItem="1" secondAttribute="top" constant="89" id="ZkA-TK-2TS"/>
+                <constraint firstItem="3Zt-gH-QVg" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="fzp-GE-xtb"/>
+                <constraint firstItem="ToJ-VY-bGx" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="jYU-be-rej"/>
+                <constraint firstItem="52i-sI-Tfr" firstAttribute="leading" secondItem="ToJ-VY-bGx" secondAttribute="leading" constant="-184" id="or7-Zt-kbl"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+        </view>
+    </objects>
+</document>

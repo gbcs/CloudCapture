@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CutClipViewController">
+            <connections>
+                <outlet property="beginCutButton" destination="u99-ip-4xU" id="Pzm-he-if3"/>
+                <outlet property="cutScrubberBar" destination="MdB-dZ-Fao" id="iZZ-8m-uw2"/>
+                <outlet property="endCutButton" destination="akk-Iy-woa" id="7KL-yv-fDq"/>
+                <outlet property="extractAudioButton" destination="goT-ti-xjN" id="ejl-Uh-nDB"/>
+                <outlet property="largeThumbView" destination="jit-R9-GMZ" id="0BY-N3-rVc"/>
+                <outlet property="savePicButton" destination="WJ2-Wg-xRZ" id="sbK-BF-Cdl"/>
+                <outlet property="scroller" destination="2oT-n3-R1o" id="noc-tA-39c"/>
+                <outlet property="startOverButton" destination="dWp-Vt-Iku" id="PvV-8z-lLW"/>
+                <outlet property="toolBar" destination="QmW-HL-bkj" id="Kb3-ph-m0E"/>
+                <outlet property="view" destination="1" id="yz7-Wb-yQS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jit-R9-GMZ" customClass="ThumbnailView">
+                    <rect key="frame" x="128" y="358" width="512" height="288"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="288" id="AUe-8L-UVr"/>
+                        <constraint firstAttribute="width" constant="512" id="J9U-9t-2zw"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akk-Iy-woa" customClass="GradientAttributedButton">
+                    <rect key="frame" x="648" y="433" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="QPf-w7-7X9"/>
+                        <constraint firstAttribute="height" constant="100" id="a7d-6a-oIy"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oT-n3-R1o">
+                    <rect key="frame" x="0.0" y="122" width="768" height="82"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="82" id="5vc-00-L85"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="ZU0-Ua-B80"/>
+                    </connections>
+                </scrollView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="QmW-HL-bkj">
+                    <rect key="frame" x="0.0" y="960" width="768" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="qTp-X4-iKC"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem title="Start Over" id="dWp-Vt-Iku">
+                            <connections>
+                                <action selector="userTappedStartOverButton:" destination="-1" id="mRt-NU-2l3"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="Ngs-yG-tRF"/>
+                        <barButtonItem title="Extract Audio" id="goT-ti-xjN">
+                            <connections>
+                                <action selector="userTappedExtractAudioButton:" destination="-1" id="Srz-kM-7kA"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="qzS-Qk-0TK"/>
+                        <barButtonItem title="Save Picture" id="WJ2-Wg-xRZ">
+                            <connections>
+                                <action selector="userTappedSavePictureButton:" destination="-1" id="kqt-qo-MQv"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <view opaque="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u99-ip-4xU" customClass="GradientAttributedButton">
+                    <rect key="frame" x="20" y="433" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="I36-ou-L4U"/>
+                        <constraint firstAttribute="height" constant="100" id="XxA-t8-CoX"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7BH-WN-xZC" userLabel="RedLineView">
+                    <rect key="frame" x="383" y="122" width="2" height="82"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="82" id="mYt-WY-ukQ"/>
+                        <constraint firstAttribute="width" constant="2" id="ppU-3r-7RU"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdB-dZ-Fao" customClass="CutScrubberBar">
+                    <rect key="frame" x="0.0" y="80" width="768" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="BLO-q1-nuh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="jit-R9-GMZ" secondAttribute="centerX" id="21C-CQ-UA6"/>
+                <constraint firstAttribute="trailing" secondItem="QmW-HL-bkj" secondAttribute="trailing" id="69U-oC-eGp"/>
+                <constraint firstAttribute="trailing" secondItem="2oT-n3-R1o" secondAttribute="trailing" id="7Oz-9G-Mng"/>
+                <constraint firstItem="akk-Iy-woa" firstAttribute="centerY" secondItem="jit-R9-GMZ" secondAttribute="centerY" constant="-19" id="JXd-AU-EtP"/>
+                <constraint firstItem="MdB-dZ-Fao" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Jdy-mA-Osa"/>
+                <constraint firstAttribute="trailing" secondItem="MdB-dZ-Fao" secondAttribute="trailing" id="ONI-MV-Tas"/>
+                <constraint firstItem="2oT-n3-R1o" firstAttribute="top" secondItem="MdB-dZ-Fao" secondAttribute="bottom" constant="-2" id="PC4-ip-nBp"/>
+                <constraint firstItem="u99-ip-4xU" firstAttribute="centerY" secondItem="jit-R9-GMZ" secondAttribute="centerY" constant="-19" id="S5b-3K-orl"/>
+                <constraint firstAttribute="centerY" secondItem="jit-R9-GMZ" secondAttribute="centerY" id="VKT-BW-JtU"/>
+                <constraint firstItem="akk-Iy-woa" firstAttribute="leading" secondItem="jit-R9-GMZ" secondAttribute="trailing" constant="8" id="VjP-x3-Dom"/>
+                <constraint firstAttribute="centerX" secondItem="7BH-WN-xZC" secondAttribute="centerX" id="Zdv-ie-pl0"/>
+                <constraint firstAttribute="bottom" secondItem="QmW-HL-bkj" secondAttribute="bottom" id="ctQ-Ai-HVC"/>
+                <constraint firstItem="QmW-HL-bkj" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="dBi-1U-sWi"/>
+                <constraint firstItem="2oT-n3-R1o" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="gU3-qd-uIA"/>
+                <constraint firstItem="7BH-WN-xZC" firstAttribute="top" secondItem="1" secondAttribute="top" constant="122" id="rqa-fW-yIT"/>
+                <constraint firstItem="jit-R9-GMZ" firstAttribute="leading" secondItem="u99-ip-4xU" secondAttribute="trailing" constant="8" id="xNw-bN-sEl"/>
+                <constraint firstItem="MdB-dZ-Fao" firstAttribute="top" secondItem="1" secondAttribute="top" constant="80" id="zeh-PO-Tuk"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
